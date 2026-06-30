@@ -131,27 +131,27 @@ async def tips(ctx):
 @bot.command()
 async def tips1(ctx):
     tip = random.choice(Tips1)
-    await ctx.send("💡🌅 ", tip)
+    await ctx.send(f"💡🌅 {tip}")
 
 @bot.command()
 async def tips2(ctx):
     tip = random.choice(Tips2)
-    await ctx.send("💡⚡ ", tip)
+    await ctx.send(f"💡⚡ {tip}")
 
 @bot.command()
 async def tips3(ctx):
     tip = random.choice(Tips3)
-    await ctx.send("💡🌍 ", tip)
+    await ctx.send(f"💡🌍 {tip}")
 
 @bot.command()
 async def tips4(ctx):
     tip = random.choice(Tips4)
-    await ctx.send("💡🚌 ", tip)
+    await ctx.send(f"💡🚌 {tip}")
 
 @bot.command()
 async def tips5(ctx):
     tip = random.choice(Tips5)
-    await ctx.send("💡📜 ", tip)
+    await ctx.send(f"💡📜 {tip}")
 @bot.command()
 async def resources(ctx):
     await ctx.send("""Sumber Daya untuk Belajar Lebih Lanjut tentang Perubahan Iklim:
@@ -174,7 +174,7 @@ async def quiz(ctx):
     # loop until no questions left or lives run out
     while lives > 0 and remaining:
         kwestion = random.choice(remaining)
-        await ctx.send(f"----------\n⌛⏱️30 DETIK!\nPertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
+        await ctx.send(f"-----------------\n⌛⏱️30 DETIK!\nPertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
 
         def check(m):
             return m.author == ctx.author and m.channel == ctx.channel
@@ -199,9 +199,9 @@ async def quiz(ctx):
         remaining.remove(kwestion)
 
     if lives <= 0:
-        await ctx.send(f"----------\n💔 GAME OVER. Skor akhir 🌠: {score}")
+        await ctx.send(f"-----------------\n💔 GAME OVER. Skor akhir 🌠: {score}")
     else:
-        await ctx.send(f"----------\nKuis selesai! Kamu menjawab semua pertanyaan. Skor akhir 🏆: {score}")
+        await ctx.send(f"-----------------\nKuis selesai! Kamu menjawab semua pertanyaan. Skor akhir 🏆: {score}")
 
 @bot.command()
 @commands.is_owner() # Restricts command usage strictly to the bot creator
@@ -209,4 +209,4 @@ async def shutdown(ctx):
     await ctx.send("Shutting down... Goodbye!")
     await bot.close()
 
-bot.run("YOUR_BOT_TOKEN_HERE") #Replace with your bot token
+bot.run("Replace this with your Bot Token")
