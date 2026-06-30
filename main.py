@@ -174,7 +174,7 @@ async def quiz(ctx):
     # loop until no questions left or lives run out
     while lives > 0 and remaining:
         kwestion = random.choice(remaining)
-        await ctx.send(f"⌛⏱️30 DETIK!\nPertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
+        await ctx.send(f"----------\n⌛⏱️30 DETIK!\nPertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
 
         def check(m):
             return m.author == ctx.author and m.channel == ctx.channel
@@ -199,9 +199,9 @@ async def quiz(ctx):
         remaining.remove(kwestion)
 
     if lives <= 0:
-        await ctx.send(f"💔 GAME OVER. Skor akhir 🌠: {score}")
+        await ctx.send(f"----------\n💔 GAME OVER. Skor akhir 🌠: {score}")
     else:
-        await ctx.send(f"Kuis selesai! Kamu menjawab semua pertanyaan. Skor akhir 🏆: {score}")
+        await ctx.send(f"----------\nKuis selesai! Kamu menjawab semua pertanyaan. Skor akhir 🏆: {score}")
 
 @bot.command()
 @commands.is_owner() # Restricts command usage strictly to the bot creator
