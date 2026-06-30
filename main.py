@@ -8,6 +8,7 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 
 # Bot buatan oleh Usaid Muhammad Hail, tentang perubahan iklim dan edukasi lingkungan. Bot ini menyediakan materi, kuis, tips, dan sumber daya terkait perubahan iklim.
 
+
 Tips1 = [
     "Gunakan lampu LED yang hemat energi di rumah Anda.",  
     "Kurangi penggunaan kendaraan pribadi dan gunakan transportasi umum atau bersepeda.",
@@ -86,94 +87,94 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send("Hai! Saya Bot ClimateChange-EduBot!\nFitur yang tersedia:\n1. $materi - Menampilkan daftar materi perubahan iklim\n2. $quiz - Mengikuti kuis tentang perubahan iklim\n3. $tips - Mendapatkan tips untuk mengurangi dampak perubahan iklim\n4. $resources - Menyediakan sumber daya untuk belajar lebih lanjut tentang perubahan iklim")
+    await ctx.send("Hai! Saya Bot ClimateChange-EduBot!\nFitur yang tersedia:\n1. 📖 $materi - Menampilkan daftar materi perubahan iklim\n2. 🧠 $quiz - Mengikuti kuis tentang perubahan iklim\n3. 💡 $tips - Mendapatkan tips untuk mengurangi dampak perubahan iklim\n4. 📚 $resources - Menyediakan sumber daya untuk belajar lebih lanjut tentang perubahan iklim")
 
 @bot.command()
 async def materi(ctx):
-    await ctx.send("Daftar Materi Perubahan Iklim :\n1. Apa itu Perubahan Iklim? ($materi1)\n2. Penyebab Perubahan Iklim ($materi2)\n3. Dampak Perubahan Iklim ($materi3)\n4. Solusi untuk Mengatasi Perubahan Iklim ($materi4)\n5. Peran Individu dalam Mengatasi Perubahan Iklim ($materi5)\n6. Gas Rumah Kaca dan Efek Rumah Kaca ($materi6)\n7. Energi Terbarukan & Transportasi Ramah Lingkungan ($materi7)\n8. Adaptasi, Kebijakan, dan Aksi Komunitas ($materi8)")
+    await ctx.send("📖 Daftar Materi Perubahan Iklim :\n1. Apa itu Perubahan Iklim? ($materi1)\n2. Penyebab Perubahan Iklim ($materi2)\n3. Dampak Perubahan Iklim ($materi3)\n4. Solusi untuk Mengatasi Perubahan Iklim ($materi4)\n5. Peran Individu dalam Mengatasi Perubahan Iklim ($materi5)\n6. Gas Rumah Kaca dan Efek Rumah Kaca ($materi6)\n7. Energi Terbarukan & Transportasi Ramah Lingkungan ($materi7)\n8. Adaptasi, Kebijakan, dan Aksi Komunitas ($materi8)")
 
 @bot.command()
 async def materi1(ctx):
-    await ctx.send("Perubahan iklim adalah perubahan jangka panjang dalam pola cuaca global atau regional yang disebabkan oleh aktivitas manusia, seperti pembakaran bahan bakar fosil, deforestasi, dan emisi gas rumah kaca. Perubahan iklim dapat menyebabkan peningkatan suhu global, perubahan pola curah hujan, kenaikan permukaan laut, dan dampak negatif lainnya pada lingkungan dan kehidupan manusia.")
+    await ctx.send("📖 Perubahan iklim adalah perubahan jangka panjang dalam pola cuaca global atau regional yang disebabkan oleh aktivitas manusia, seperti pembakaran bahan bakar fosil, deforestasi, dan emisi gas rumah kaca. Perubahan iklim dapat menyebabkan peningkatan suhu global, perubahan pola curah hujan, kenaikan permukaan laut, dan dampak negatif lainnya pada lingkungan dan kehidupan manusia.")
 
 @bot.command()
 async def materi2(ctx):
-    await ctx.send("Penyebab perubahan iklim utama adalah aktivitas manusia, terutama pembakaran bahan bakar fosil yang menghasilkan emisi gas rumah kaca, deforestasi yang mengurangi penyerapan CO2, dan aktivitas industri yang memproduksi limbah berbahaya.")
+    await ctx.send("📖 Penyebab perubahan iklim utama adalah aktivitas manusia, terutama pembakaran bahan bakar fosil yang menghasilkan emisi gas rumah kaca, deforestasi yang mengurangi penyerapan CO2, dan aktivitas industri yang memproduksi limbah berbahaya.")
 
 @bot.command()
 async def materi3(ctx):
-    await ctx.send("Dampak perubahan iklim meliputi peningkatan suhu global, perubahan pola cuaca ekstrem, kenaikan permukaan laut, kepunahan spesies, dan dampak negatif pada kesehatan manusia dan ekosistem.")
+    await ctx.send("📖 Dampak perubahan iklim meliputi peningkatan suhu global, perubahan pola cuaca ekstrem, kenaikan permukaan laut, kepunahan spesies, dan dampak negatif pada kesehatan manusia dan ekosistem.")
 
 @bot.command()
 async def materi4(ctx):
-    await ctx.send("Solusi untuk mengatasi perubahan iklim meliputi pengurangan emisi gas rumah kaca, penggunaan energi terbarukan, penanaman pohon, dan pengembangan teknologi hijau.")
+    await ctx.send("📖 Solusi untuk mengatasi perubahan iklim meliputi pengurangan emisi gas rumah kaca, penggunaan energi terbarukan, penanaman pohon, dan pengembangan teknologi hijau.")
 
 @bot.command()
 async def materi5(ctx):
-    await ctx.send("Peran individu dalam mengatasi perubahan iklim meliputi pengurangan konsumsi energi, menggunakan transportasi ramah lingkungan, memilih produk ramah lingkungan, dan meningkatkan kesadaran tentang isu perubahan iklim.")
+    await ctx.send("📖 Peran individu dalam mengatasi perubahan iklim meliputi pengurangan konsumsi energi, menggunakan transportasi ramah lingkungan, memilih produk ramah lingkungan, dan meningkatkan kesadaran tentang isu perubahan iklim.")
 
 @bot.command()
 async def materi6(ctx):
-    await ctx.send("Gas rumah kaca seperti karbon dioksida, metana, dan nitrous oxide menyerap panas di atmosfer dan memperkuat efek rumah kaca. Aktivitas manusia, termasuk pembakaran bahan bakar fosil dan peternakan, meningkatkan konsentrasi gas ini. Perubahan reflektivitas Bumi, seperti pencairan es, juga memperburuk pemanasan global melalui umpan balik albedo.")
+    await ctx.send("📖 Gas rumah kaca seperti karbon dioksida, metana, dan nitrous oxide menyerap panas di atmosfer dan memperkuat efek rumah kaca. Aktivitas manusia, termasuk pembakaran bahan bakar fosil dan peternakan, meningkatkan konsentrasi gas ini. Perubahan reflektivitas Bumi, seperti pencairan es, juga memperburuk pemanasan global melalui umpan balik albedo.")
 
 @bot.command()
 async def materi7(ctx):
-    await ctx.send("Energi terbarukan seperti tenaga surya, angin, dan air menghasilkan listrik tanpa emisi gas rumah kaca. Transportasi ramah lingkungan termasuk kendaraan listrik, transportasi umum, sepeda, dan jalan kaki. Mengurangi ketergantungan pada bahan bakar fosil membantu menurunkan emisi, polusi, dan memperlambat laju perubahan iklim.")
+    await ctx.send("📖 Energi terbarukan seperti tenaga surya, angin, dan air menghasilkan listrik tanpa emisi gas rumah kaca. Transportasi ramah lingkungan termasuk kendaraan listrik, transportasi umum, sepeda, dan jalan kaki. Mengurangi ketergantungan pada bahan bakar fosil membantu menurunkan emisi, polusi, dan memperlambat laju perubahan iklim.")
 
 @bot.command()
 async def materi8(ctx):
-    await ctx.send("Adaptasi iklim meliputi tindakan untuk mengurangi risiko dampak iklim, seperti sistem drainase yang lebih baik atau varietas tanaman tahan kering. Kebijakan dan aksi komunitas mencakup kampanye kesadaran, dukungan terhadap regulasi lingkungan, dan partisipasi program daur ulang. Peran individu adalah memilih gaya hidup berkelanjutan, memberi suara pada kebijakan hijau, dan mendukung organisasi lingkungan.")
+    await ctx.send("📖 Adaptasi iklim meliputi tindakan untuk mengurangi risiko dampak iklim, seperti sistem drainase yang lebih baik atau varietas tanaman tahan kering. Kebijakan dan aksi komunitas mencakup kampanye kesadaran, dukungan terhadap regulasi lingkungan, dan partisipasi program daur ulang. Peran individu adalah memilih gaya hidup berkelanjutan, memberi suara pada kebijakan hijau, dan mendukung organisasi lingkungan.")
 
 @bot.command()
 async def tips(ctx):
-    await ctx.send("Tips tentang apa?:\n1. Tips-tips random untuk mengurangi dampak perubahan iklim ($tips1)\n2. Tips-tips random untuk menghemat energi di rumah ($tips2)\n3. Tips-tips random untuk mengurangi penggunaan plastik ($tips3)\n4. Tips-tips random untuk memilih transportasi ramah lingkungan ($tips4)\n5. Tips-tips random untuk mendukung kebijakan perubahan iklim ($tips5)")
+    await ctx.send("💡 Tips tentang apa?:\n1. 🌅 Tips-tips random untuk mengurangi dampak perubahan iklim ($tips1)\n2. ⚡ Tips-tips random untuk menghemat energi di rumah ($tips2)\n3. 🌍 Tips-tips random untuk mengurangi penggunaan plastik ($tips3)\n4. 🚌 Tips-tips random untuk memilih transportasi ramah lingkungan ($tips4)\n5. 📜 Tips-tips random untuk mendukung kebijakan perubahan iklim ($tips5)")
 @bot.command()
 async def tips1(ctx):
     tip = random.choice(Tips1)
-    await ctx.send(tip)
+    await ctx.send("💡🌅 ", tip)
 
 @bot.command()
 async def tips2(ctx):
     tip = random.choice(Tips2)
-    await ctx.send(tip)
+    await ctx.send("💡⚡ ", tip)
 
 @bot.command()
 async def tips3(ctx):
     tip = random.choice(Tips3)
-    await ctx.send(tip)
+    await ctx.send("💡🌍 ", tip)
 
 @bot.command()
 async def tips4(ctx):
     tip = random.choice(Tips4)
-    await ctx.send(tip)
+    await ctx.send("💡🚌 ", tip)
 
 @bot.command()
 async def tips5(ctx):
     tip = random.choice(Tips5)
-    await ctx.send(tip)
+    await ctx.send("💡📜 ", tip)
 @bot.command()
 async def resources(ctx):
     await ctx.send("""Sumber Daya untuk Belajar Lebih Lanjut tentang Perubahan Iklim:
-1. BMKG – Informasi Iklim Indonesia — Portal utama data, publikasi, dan informasi perubahan iklim Indonesia.
-2. BMKG – Klimatologi & Perubahan Iklim — Analisis suhu, curah hujan, dan proyeksi iklim Indonesia.
-3. Sekolah Lapang Iklim (BMKG) — Materi literasi iklim untuk masyarakat umum.
-4. BMKG – Informasi Gas Rumah Kaca — Data CO₂, CH₄, dan indikator emisi di Indonesia.
-5. Direktorat Jenderal Pengendalian Perubahan Iklim (KLHK) — Kebijakan dan program pengendalian perubahan iklim Indonesia.
-6. NASA Climate Change — Penjelasan ilmiah, data, dan visualisasi perubahan iklim global.
-7. NOAA Climate.gov — Artikel, data, dan edukasi iklim dari pemerintah Amerika Serikat.
-8. NOAA National Centers for Environmental Information (NCEI) — Data iklim global dan laporan tahunan kondisi iklim dunia.
+1. BMKG – Informasi Iklim Indonesia — Portal utama data, publikasi, dan informasi perubahan iklim Indonesia. https://www.bmkg.go.id
+2. BMKG – Klimatologi & Perubahan Iklim — Analisis suhu, curah hujan, dan proyeksi iklim Indonesia. https://www.bmkg.go.id/iklim
+3. Sekolah Lapang Iklim (BMKG) — Materi literasi iklim untuk masyarakat umum. https://www.bmkg.go.id/laman/iklim
+4. BMKG – Informasi Gas Rumah Kaca — Data CO₂, CH₄, dan indikator emisi di Indonesia. https://www.bmkg.go.id/iklim/GHG
+5. Direktorat Jenderal Pengendalian Perubahan Iklim (KLHK) — Kebijakan dan program pengendalian perubahan iklim Indonesia. https://pppi.menlhk.go.id
+6. NASA Climate Change — Penjelasan ilmiah, data, dan visualisasi perubahan iklim global. https://climate.nasa.gov
+7. NOAA Climate.gov — Artikel, data, dan edukasi iklim dari pemerintah Amerika Serikat. https://www.climate.gov
+8. NOAA National Centers for Environmental Information (NCEI) — Data iklim global dan laporan tahunan kondisi iklim dunia. https://www.ncei.noaa.gov
 """)
 
 @bot.command()
 async def quiz(ctx):
     score = 0
     lives = 3
-    await ctx.send("Kuis Perubahan Iklim Dimulai! Kamu memiliki 3 nyawa. Jawab pertanyaan berikut dengan benar untuk mendapatkan skor, setiap pertanyaan 30 detik. Salah 3x artinya GAME OVER.")
+    await ctx.send("🌏❔Kuis Perubahan Iklim Dimulai! Kamu memiliki 3 nyawa ❤️. Jawab pertanyaan berikut dengan benar untuk mendapatkan skor ⭐, setiap pertanyaan 30 detik ⌛. Salah 3x artinya GAME OVER.")
     remaining = list(questions.keys())
     # loop until no questions left or lives run out
     while lives > 0 and remaining:
         kwestion = random.choice(remaining)
-        await ctx.send(f"Pertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
+        await ctx.send(f"⌛⏱️30 DETIK!\nPertanyaan: {kwestion}\nPilihan Jawaban:\n" + "\n".join(questions[kwestion]))
 
         def check(m):
             return m.author == ctx.author and m.channel == ctx.channel
@@ -181,7 +182,7 @@ async def quiz(ctx):
         try:
             msg = await bot.wait_for('message', check=check, timeout=30.0)
         except Exception:
-            await ctx.send("Waktu habis untuk pertanyaan ini. Nyawa berkurang 1.")
+            await ctx.send("⌛Waktu habis untuk pertanyaan ini. Nyawa berkurang 1.💔")
             lives -= 1
             remaining.remove(kwestion)
             continue
@@ -190,17 +191,17 @@ async def quiz(ctx):
         correct = answers.get(kwestion)
         if user_answer == correct:
             score += 1
-            await ctx.send(f"Benar! Skor: {score} | Nyawa: {lives}")
+            await ctx.send(f"Benar! Skor: ⭐{score} | Nyawa: ❤️{lives}")
         else:
             lives -= 1
-            await ctx.send(f"Salah. Jawaban yang benar: {correct}. Skor: {score} | Nyawa: {lives}")
+            await ctx.send(f"Salah. Jawaban yang benar: {correct}. Skor: ⭐{score} | Nyawa: ❤️{lives}")
 
         remaining.remove(kwestion)
 
     if lives <= 0:
-        await ctx.send(f"GAME OVER. Skor akhir: {score}")
+        await ctx.send(f"💔 GAME OVER. Skor akhir 🌠: {score}")
     else:
-        await ctx.send(f"Kuis selesai! Kamu menjawab semua pertanyaan. Skor akhir: {score}")
+        await ctx.send(f"Kuis selesai! Kamu menjawab semua pertanyaan. Skor akhir 🏆: {score}")
 
 @bot.command()
 @commands.is_owner() # Restricts command usage strictly to the bot creator
@@ -208,4 +209,4 @@ async def shutdown(ctx):
     await ctx.send("Shutting down... Goodbye!")
     await bot.close()
 
-bot.run("YOUR_BOT_TOKEN_HERE")  # Replace with your actual bot token
+bot.run("YOUR_BOT_TOKEN_HERE") #Replace with your bot token
